@@ -11,7 +11,7 @@
 
 # Guide Name: 
 
-Prof. Anup Kunte
+Prof. Anup. S. Kunte
 
 
 # Contents
