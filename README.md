@@ -1,8 +1,8 @@
  # Project Title: Bitcoin-Price-Prediction
 
-Group Members: 1] Shivprakash Vishwakarma
-               2] Afzal Siddique
-               3] Swaraj Kondlekar
+Group Members: 1] Shivprakash Vishwakarma\
+               2] Afzal Siddique\
+               3] Swaraj Kondlekar\
                
  
 
