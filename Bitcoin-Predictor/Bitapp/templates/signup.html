@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block 'content' %}
+
+<div class="jumbotron container bg-light mt-5">
+  <div class="container">
+    {% for message in messages %}
+    <div class="alert-danger">{{message}}</div>
+    {% endfor %}
+
+    <div class="row">
+      <div
+        class="
+          col-lg-6
+          shadow-lg
+          rounded-lg
+          pl-5
+          pr-5
+          border border-primary
+          rounded-lg
+        "
+      >
+        <h5 class="fw-light mb-2 pt-3 text-warning">Signup</h5>
+        <p class="text-light text-center">{{ error }}</p>
+        <form method="POST">
+          {% csrf_token %}
+          <div class="mb-4 bg-light">{{ form.username }}</div>
+          <div class="mb-4 bg-light">{{ form.email }}</div>
+          <div class="mb-4 bg-light">{{ form.password1 }}</div>
+          <div class="mb-4 bg-light">{{ form.password2 }}</div>
+          <div class="row">
+            <div class="col-lg-6">
+              <button
+                type="submit"
+                class="btn btn-warning btn-block rounded-lg mb-4"
+              >
+                Sign Up
+              </button>
+            </div>
+            <div class="col-lg-6">
+              <a
+                href="{% url 'home' %}"
+                class="btn btn-warning btn-block rounded-lg mb-4"
+                >Login</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 shadow-lg rounded-lg p-0">
+        <img
+          src="https://a-static.besthdwallpaper.com/pump-is-bitcoin-wallpaper-53102_L.jpg"
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </div>
+    <div class="shadow-lg jumbotron py-3 rounded-lg mx-3 mt-4">
+      <h5 class="fw-light mb-3">
+        Predict Bitcoin Prediction <i class="fab fa-bitcoin"></i>
+      </h5>
+      <ul>
+        <li>
+          <i class="fab fa-bitcoin"></i>Bitcoin Prediction is the act of trying
+          to determine the future value of a Bitcoin companies Bitapp or other
+          financial instrument traded on a financial exchange.
+        </li>
+        <li>We are using Stacked LSTM Model.</li>
+        <li>
+          Just select the company name and click on Predict. You will get a
+          graph of prediction for your selected company.
+        </li>
+        <li>
+          We does not provide financial advice or personal investment to
+          individuals, or act as personal financial, legal, or instututional
+          investment advisors, or individually advocate the purchase or sale of
+          any security or investment or the use of any particular financial
+          strategies.
+        </li>
+        <li>
+          Information is provided 'as-is' and solely for informational purposes
+          and is not advice. We does not bear any responsibility for any losses
+          or damage that may occur as a result of reliance on this data.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock 'content' %}
