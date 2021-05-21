@@ -35,7 +35,7 @@ b] Project Diary
 c] Report
 
 # 3] Project Sample Run
-Contains the test run of the project.
+Contains the test run video of the project.
 
 # 4] Models
 Contains the prediction model.
