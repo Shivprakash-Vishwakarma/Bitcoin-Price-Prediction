@@ -1,4 +1,4 @@
- # Project Title: Bitcoin-Price-Prediction
+ # Project Title: Cryptocurrency-Price-Prediction
 
 # Group Members:
 
