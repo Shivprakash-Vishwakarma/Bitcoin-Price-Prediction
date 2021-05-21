@@ -30,9 +30,9 @@ Contains all the files and code of the project.
 # 2] Documents
 
 Contains the following documents
-# a] Presentations\
-# b] Project Diary\
-# c] Report
+a] Presentations
+b] Project Diary
+c] Report
 
 # 3] Project Sample Run
 Contains the test run of the project.
